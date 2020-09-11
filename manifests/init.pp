@@ -138,8 +138,8 @@ class thanos (
     'rule'           => $manage_rule,
     'store'          => $manage_store,
     'compact'        => $manage_compact,
-    'receive'        => $manage_receive,
-    'bucket-web'     => $manage_tools_bucket_web,
+    'downsample'     => $manage_downsample,
+    'bucket-web'     => $manage_bucket_web,
   }.filter |String $key, Boolean $value| {
     $value
   }.map |String $key, Boolean $value| {
